@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TempConverte</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Animation CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <form id="tempCalc" onsubmit="calculateTemp(); return false">
@@ -19,7 +24,11 @@
           <option value="fah">Fahrenheit</option>
         </select>
       </div>
-      <input type="submit" name="temp" />
+      <input
+        type="submit"
+        name="temp"
+        class="animate__animated animate__rubberBand button"
+      />
       <p id="resultContainer">Select and See the results</p>
     </form>
 
